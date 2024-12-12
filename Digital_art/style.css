@@ -1,0 +1,472 @@
+        /* style.css */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-color: #b2cab2;
+            color: #fff;
+            padding: 15px 0;
+            display: flex;
+            gap: 550px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 60px;
+            margin-left: 20px;
+        }
+
+        header nav{
+            display:flex;
+            gap: 90px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+        }
+
+        header nav ul li {
+            margin: 0 10px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            margin-top: 28px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .art-grid {
+            margin-left: 50px;
+            display: flex;
+            flex-wrap: wrap; /* Allow the items to wrap */
+            gap: 10px; /* Distribute the items evenly */
+            min-height: 500px;
+        }
+
+        h2 {
+            height: 20px;
+            text-align: center;
+        }
+
+        .art-item {
+            margin: 20px;
+            background-color: #fff;
+            height: 400px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            width: 15%; /* Set the width to approximately 18% for 5 items per row with gap */
+        }
+
+        .art-item img {
+            width: 100%;
+            height: 60%;
+        }
+
+        .art-item h3 {
+            text-align: center;
+        }
+
+        .art-item p {
+            text-align: center;
+            margin-left: 20px;
+        }
+
+        .art-item button {
+            margin-top: 20px;
+            margin-left: 60px;
+            font-size: 20px;
+            background-color: #7b93a4;
+            cursor: pointer;
+        }
+
+        .art-item button:active {
+            transform: scale(0.95);
+        }
+
+        .upload-art form{
+            width: 900px;
+            min-height: 540px;
+            border: 2px solid black;
+            margin-bottom: 20px;
+            margin-left: 400px;
+        }
+        .upload-art label{
+            font-size: 20px;
+            margin:  50px 50px;
+        }
+
+        .upload-art input{
+            font-size: 20px;
+            margin: 50px 0px;
+        }
+
+        .upload-art button{
+            width: 200px;
+            height: 50px;
+            font-size: 29px;
+            margin-left: 360px;
+            background-color: #9bc49b;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .upload-art button:active {
+            transform: scale(0.95);
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 0;
+            padding: 20px;
+        }
+
+        .artwork-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .artwork-item {
+            background-color: #fff;
+            margin : 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            height: 400px; /* Set a fixed height */
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .artwork-item img {
+            width: 200px;
+            height: 200px; /* Fixed height for image */
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .artwork-item h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .artwork-item p {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #666;
+        }
+
+        .artwork-item:hover {
+            transform: translateY(-10px);
+        }
+
+                /* Checkout section styling */
+        .checkout {
+            max-width: 600px;                /* Limit the width of the checkout section */
+            min-height: 240px;
+            margin: 50px auto;               /* Center the section horizontally */
+            padding: 20px;                   /* Add padding inside the section */
+            background-color: #f9f9f9;       /* Light background color */
+            border-radius: 10px;             /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow for 3D effect */
+            text-align: center;              /* Center the content */
+            margin-bottom: 290px;
+        }
+
+        .checkout h2 {
+            font-size: 24px;                 /* Larger font for the title */
+            margin-bottom: 20px;             /* Space below the title */
+        }
+
+        .checkout p {
+            font-size: 18px;                 /* Font size for the price */
+            margin-bottom: 30px;             /* Space between price and button */
+            color: #333;                     /* Dark text color */
+        }
+
+        .checkout button {
+            background-color: #4CAF50;       /* Green background */
+            color: white;                    /* White text */
+            border: none;                    /* Remove border */
+            padding: 15px 30px;              /* Button padding */
+            font-size: 18px;                 /* Larger font size */
+            border-radius: 5px;              /* Rounded corners for button */
+            cursor: pointer;                 /* Pointer cursor on hover */
+            transition: background-color 0.3s ease, transform 0.1s ease;  /* Smooth transitions */
+        }
+
+        .checkout button:hover {
+            background-color: #45a049;       /* Darker green on hover */
+        }
+
+        .checkout button:active {
+            transform: scale(0.95);          /* Shrink button slightly when pressed */
+            background-color: #3e8e41;       /* Darker background on click */
+        }
+
+
+        .container h1,p {
+            color: #333;
+            text-align: left;
+            width: 200px;
+        }
+        .container h2{
+            text-align: center;
+            width : 200px;
+        }
+
+        .register-form {
+            width: 400px;
+            min-height: 490px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .register-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .register-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .register-form input,
+        .register-form select {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .register-form input:focus,
+        .register-form select:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .register-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .register-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .register-form p {
+            margin-top: 15px;
+            text-align: center;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .register-form {
+                padding: 15px;
+                margin: 20px;
+            }
+        }
+
+        .cart {
+            max-width: 800px;
+            min-height: 490px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #f8f8f8;
+            color: #555;
+            font-weight: bold;
+        }
+
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        table td {
+            color: #666;
+        }
+
+        .cart h3 {
+            text-align: right;
+            margin-top: 10px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: block;
+            float: right;
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .btn-clear{
+            display: block;
+            float: right;
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 10px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+            margin-left: 20px;
+
+        }
+
+        .btn:hover,.btn-clear:hover {
+            background-color: #0056b3;
+        }
+
+        .login-form {
+            background-color: #fff;
+            min-height: 360px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin: 100px auto;
+        }
+
+        .login-form h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .login-form label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .login-form input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .login-form input:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+
+        .container1 {
+            width: 500px;
+            height: 290px;
+            margin: 129px 500px;
+            border: 2px solid black;
+        }
+
+        .container1 p{
+            margin-top: 50px;
+            margin-left: 150px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .container1 button{
+            margin-left: 190px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .container1 button:active{
+            transform: scale(0.95);  
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            padding: 20px;
+        }
+        footer p{
+            width: 100%;
+            color:blue;
+            text-align: center;
+        }
